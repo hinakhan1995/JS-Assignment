@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+
+		//positive number
+		
+		var num= prompt("Enter any positive number");
+        var r =Math.round(num);
+        document.write("round off value of the number" +"<br>");
+        document.write(r + "<br>");
+        document.write(" floor value of the number " +"<br>");
+        r= Math.floor(num);
+        document.write(r + "<br>");
+        document.write("ceil value of the number " +"<br>");
+        r= Math.ceil(num);
+        document.write(r + "<br>");
+
+        // negative number
+        var neg= prompt("Enter any Negative number");
+        if(neg <0)
+         {
+               var r =Math.round(neg);
+               document.write("Result of Round" +"<br>");
+               document.write(r + "<br>");
+                document.write("Result of Floor" +"<br>");
+              r= Math.floor(neg);
+              document.write(r + "<br>");
+               document.write("Result of Ceil" +"<br>");
+               r= Math.ceil(neg);
+              document.write(r + "<br>");
+           }
+           else
+             {
+                 alert("Please enter negative number " );
+             }
+
+             //generating randm numbers
+             var diceRoll = Math.floor( Math.random() * 6 ) +1;
+             document.write('You rolled a ' + diceRoll + "<br>");
+
+             //head and tail
+
+             var coin =Math.ceil(Math.random()*3);
+              if(coin==1)
+                {
+                    document.write(coin + "tail" + "<br>");
+           }
+           else if(coin==2)
+           {
+             document.write(coin + "head" + "<br>");
+            }
+
+            var secret=Math.floor(Math.random()*11);
+            var user=prompt("guess the number");
+            document.write("the secret number " + secret + "<br>");
+            if (secret == user)
+             {
+                  document.write(" congrats " + "br");
+             }
+             else
+             {
+                 document.write("wrong" + "<br>");
+             }
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+		var num = prompt('enter a nuber');
+		var length = prompt('enter a length');
+
+		for (var i =1 ; i<= length; i++ ) {
+			document.write(num + " x " + i + " = " + num*i + "<br>");
+			
+		}
+
+		//counting
+        document.write("Counting : ");
+		for (var i = 0; i <=15; i++)
+	    {
+	 	document.write(i + " ");
+	    }
+	    document.write("<br>");
+	 // Reverse Counting 
+	   document.write("Reverse Counting : ");
+       var j = 10;
+       while (j > 0) {
+       document.write(j + " ");
+        j--;
+       }
+       document.write("<br>");
+	
+   
+      //Even
+	   document.write("Even Numbers : " );
+       for(i=0; i<=20; i++){
+ 
+         if(i % 2 == 0){
+          document.write(i + " ");
+         }
+ 
+       }
+       document.write("<br>");
+
+    //Odd
+
+       document.write("Odd Numbers : ");
+       for(j=1; j<=20; j++){
+ 
+        if(j % 2!= 0){
+           document.write(j + " ");
+        }
+    }
+    document.write("<br>");
+
+    //Series
+
+    document.write("Series : ");
+    for(l=1; l<=20; l++){
+ 
+        if(l % 2 == 0){
+            document.write(l +"k" + " ");
+        }
+ 
+    }
+    document.write("<br>");
+
+    var fruits = ['apple', 'orange', 'banana', 'graps', 'mango'];
+    var value =parseInt(prompt("Stop value"));
+    fruits.splice(value);
+    document.write(fruits);
+
+	</script>
+
+	<script type="text/javascript">
+		
+		var arr=['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+
+		var search=prompt("Enter value");
+		if(fruits.indexOf(search) !=-1)
+        {
+           alert("Value exists!");
+        } 
+         else{
+
+            alert("Value does not exists!");
+        }
+        document.write("<br>");
+
+        //largest 
+
+        var array = [24, 53, 78, 91, 12];
+        for (i=0; i<array.length; i++) {
+        if (array[i]>largest) {
+        console.log(largest + " " + array[i]);
+        largest = array[i];
+       }
+     }
+      document.write(largest);
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html> 

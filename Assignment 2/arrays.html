@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var arr1 = [320 , 230 , 480]
+		var arr = ["Michael", "John", "Tony"]
+		var first = 320/500 *100;
+		document.write("Score of Michael is 320. Percentage : " + first+"%" + "<br>")
+		var first = 230/500 *100;
+		document.write("\nScore of John is 230. Percentage : " + first+"%" + "<br>")
+		var first = 480/500 *100;
+		document.write("Score of Tony is 480. Percentage : " + first+"%" + "<br>")
+		var first = 480/500 *100;
+
+		var color = ['Green', 'Yellow', 'Pink'];
+        document.write("Array elements before adding color" + "<br>");
+        document.write(color + "<br>");
+
+        var add = prompt("Add color");
+        color.unshift(add); 
+        document.write("Array elements After adding color" + "<br>");
+        document.write(color + "<br>");
+
+       var end=prompt("Enter color to add at the end of the array");
+       color.push(end);
+       document.write("Adding Color at the end" + "<br>");
+       document.write(color + "<br>");
+
+       document.write("Adding 2 more colors at the beginning" + "<br>");
+       color.unshift("Purple","Black");
+       document.write(color + "<br>");
+
+   document.write("Deleting first elements" + "<br>");
+   color.shift();
+   document.write(color +"<br>");
+   document.write("Deleting Last elements" + "<br>");
+   color.pop();
+   document.write(color + "<br>");
+   document.write("Inserting" +"<br>");
+
+    var insert=prompt(" index you wants to add a color?");
+    var col1=prompt("What color you want to add?");
+    color.splice(insert, 0, col1);
+    document.write(color + "<br>");
+    document.write("Deleting" +"<br>");
+
+    var insert=prompt("which index you wants to Remove a color?");
+    var col2=prompt("how many colors you want to Remove?");
+    color.splice(insert, col2);
+    document.write(color + "<br>");
+
+     <!--Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array-->
+
+
+
+    var city =['Karachi', 'Lahore','Islamabad'];
+    var selectcity=[];
+    selectcity=city.copyWithin(0,2,0);
+    document.write(selectcity + "<br>");
+
+    //Declare and initialize a multidimensional array representing the cities of different countries.
+
+    var cities= new Array ();
+    cities[0] = new Array (" Pakistan: ", "Karachi", "Islamabad");
+    cities[1] = new Array (" Malaysia: ", "Kuala Lumpur", "Malacca");
+    cities[2]= new Array(" America: ","New York","Lol Angeles");
+
+    for (var i = 0; i < cities.length; i++) {
+
+    	for (var j = 0; j < cities.length; j++){
+
+    		document.write(cities[i][j] + " ");
+    	}
+    	document.write("<br>");
+    }
+
+ 
+
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

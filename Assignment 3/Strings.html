@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<script type="text/javascript">
+		
+		var strng = prompt("Enter some text");
+        var n = strng.length;
+        document.write( "Finding length: " + n + "<br>");
+
+        var st = prompt("Input");
+        var str2=st.charAt(st.length-1);
+        document.write('Last letter is: ' + str2 + "<br>");
+
+        //finding segments
+
+        var index = "pakistani";
+         var n = index.indexOf("n");
+        document.write(n + "<br>");
+
+        var username =prompt("Enter input");
+    var userpattern =/^[a-zA-Z0-9]+$/;
+       if( userpattern.test(username))
+         {
+          alert("True" + "<br>");
+          }
+        else
+         {
+               alert("enter a valid username " + "<br>");
+           }
+
+        var str = "the quick brown fox jumps over the lazy dog";
+          var count = (str.match(/the/g) || []).length;
+            document.write(count + "<br>");
+
+            //finding a character at a location
+
+            var char = "Pakistani"
+            var result= char.charAt(3);
+             document.write(result + "<br>");
+
+             //replacing characters
+
+             var str= "Hyderabad"
+             var rep = str.replace("Hyder", "Islam");
+             document.write(rep + "<br>");
+
+             var message = "Ali and sami are best friends.";
+            var repl = message.replace(/and/g, "&");
+              document.write(repl + "<br>");
+
+              
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

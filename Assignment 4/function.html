@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+		function uppercase(str)
+      {
+         var arr = str.split(' ');
+         var newarray = [];
+    
+      for(var x = 0; x < arr.length; x++){
+
+         newarray.push(arr[x].charAt(0).toUpperCase()+arr[x].slice(1));
+      }
+      return newarray.join(' ');
+    }
+    document.write(uppercase("karachi" + "<br>"));
+
+
+    function char_count(str, letter) 
+    {
+       var letter_Count = 0;
+       for (var position = 0; position < str.length; position++) 
+      {
+         if (str.charAt(position) == letter) 
+         {
+            letter_Count += 1;
+      }
+
+    }
+     return letter_Count;
+  }
+
+   document.write(char_count('w3resource.com', 'o' ));
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
